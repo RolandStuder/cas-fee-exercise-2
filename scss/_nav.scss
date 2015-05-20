@@ -1,0 +1,29 @@
+aside {
+	padding: $padding-standard;
+}
+
+aside .wrapper {
+	overflow: hidden;
+}
+
+aside h3 {
+	display: none;
+}
+
+aside ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+aside ul li {
+	padding: 0.25em 0;
+	border-top: 1px solid #b3b4b5;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+nav ul li:nth-of-type(n+2):nth-last-of-type(n+2) {
+	margin-left: 1em;
+}

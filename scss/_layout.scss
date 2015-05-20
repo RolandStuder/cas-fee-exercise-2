@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page-wrapper {
+	max-width: 70em;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+
+	background-color: white;
+}
+
+$aside-width: 30%;
+
+aside {
+	float: left; 
+	width: $aside-width;
+}
+
+.main {
+	float: right;
+	width: 100% - $aside-width;
+}
+
+aside, .main {
+	padding-bottom: 9999em;
+	margin-bottom: -9997em; 
+} 
+
+// .page-wrapper:before {
+// 	content: '';
+// 	z-index: -1;
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	left: 0;
+// 	bottom: 0;
+// 	background-color: white;
+// }
+
+
+
+// @mixin box() {
+// 	padding: 20px;
+// 	background-color: $color-bright;
+// 	color: black;
+// 	min-width: 300px;
+// 	flex: 1;
+// } 
+
+// header, .summary, .preamble, // intro
+// .explanation, .participation, .benefits, .requirements, // main
+// footer, 
+// .design-selection, .design-archives, .zen-resources // aside
+// {
+// 	@include box();
+// }
+
+// .summary {
+// 	font-size: 2em;
+// 	line-height: 1em;
+// 	font-weight: bold;
+// 	color: white;
+// 	background-color: $color-dark;
+// }
+
+// .main, aside > .wrapper {
+// 	width: 100%;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+
+// .main > div:nth-child(3n-2) { 
+// 	background-color: $color-accent-one;
+// 	color: white;
+// }
+
+// .main > :nth-child(3n-1) { 
+// 	background-color: $color-accent-two;
+// 	color: white;
+// }
+
+// .main > div:nth-child(3n) { 
+// 	background-color: $color-accent-three;
+// 	color: white;
+// }
+
+// .requirements {
+// 	flex: 2;
+// }
+
+
+
+
+
+
+
+
+// // structure
+
+// /*
+
+// body.css-zen-garden
+// 	.page-wrapper
+// 		section.intro
+// 			header
+// 			.summary
+// 			.preamble
+// 		.main.supporting
+// 			.explanation
+// 			.participation
+// 			.benefits
+// 			.requirements
+// 		footer
+// 		aside.sidebar
+// 			.wrapper
+// 				.design-selection
+// 				.design-archives
+// 				.zen-resources
+
+// */ 

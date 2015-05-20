@@ -1,0 +1,54 @@
+.intro {
+	background-image: url(http://www.hsr.ch/uploads/tx_icsslide/01_01.jpg);
+	background-size: cover;
+	padding: 0 $padding-standard;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+header, .preamble, .summary {
+	width: 20em;
+	margin: 0;
+	padding: $padding-standard $padding-standard;
+	overflow: hidden;
+	background-color: white;
+	margin-bottom: $padding-standard;
+	text-overflow: ellipsis;
+}
+
+header {
+	padding: 0;
+}
+
+h1 { 
+	content: url(http://www.hsr.ch/fileadmin/templates/hsr/html/img/logo.gif);
+	background-color: white;
+	padding: $padding-standard;
+	margin: 0;
+	margin-left:  -$padding-standard;
+}
+
+
+// taking away content, that i cannot use for nav display
+header h2,
+.summary p:nth-child(2),
+.preamble p { 
+	display: none;
+}
+
+// Reformatting text
+
+.summary p, .preamble h3 { 
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1em;
+	color: $color-link;
+	text-overflow: ellipsis; // question: Why does this text-overflow not work?
+	margin: 0;
+	padding: 0;
+}
+
+
+
